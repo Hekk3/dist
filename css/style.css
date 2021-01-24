@@ -695,14 +695,15 @@ h6 {
 }
 
 .tabs {
-  max-width: 287px;
+  max-width: 358px;
 }
 
 .tabs__button {
   display: inline-block;
   border: 1px solid #bfc2d3;
+  margin: 0 18px 21px 0;
   border-radius: 20px;
-  padding: 10px 38px;
+  padding: 10px 38px 10px 30px;
   background: var(--color-white);
   transition: background 0.3s;
   cursor: pointer;
@@ -718,9 +719,10 @@ h6 {
 }
 
 .tabs__button-notification {
-  position: absolute;
-  right: -24px;
-  top: -8px;
+  position: relative;
+  right: -3px;
+  top: -5px;
+  display: inline-block;
   font-size: 12px;
 }
 
