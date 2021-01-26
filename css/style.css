@@ -1129,6 +1129,8 @@ h6 {
 }
 
 .footer {
+  position: relative;
+  overflow: hidden;
   padding: 135px 0 25px;
   background: #121212;
 }
@@ -1757,10 +1759,6 @@ h6 {
   }
 }
 
-.social__link {
-  transition: transform 0.3s;
-}
-
 .social__link:not(:last-child) {
   margin-right: 40px;
 }
@@ -1771,11 +1769,18 @@ h6 {
   }
 }
 
-.social__link:hover {
+.social__img {
+  transition: transform 0.3s;
+}
+
+.social__img:hover {
   transform: scale(1.1);
 }
 
 .modals {
+  position: absolute;
+  left: 0;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2026,19 +2031,4 @@ h6 {
   font-size: 14px;
   line-height: 16px;
   color: var(--color-black);
-}
-
-::-webkit-scrollbar {
-  background: #555;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #444;
-  border-radius: 15px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #222;
 }

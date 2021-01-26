@@ -74,4 +74,6 @@ document.addEventListener('click', function (e) {
 
     modals.classList.remove('active');
   }
-});
+}); // AOS
+
+AOS.init();

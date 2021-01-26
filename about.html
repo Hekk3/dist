@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Some Title</title>
@@ -36,7 +37,7 @@
   </header>
   <main class="main">
     <section class="about wrapper">
-      <h1 class="about__title">
+      <h1 class="about__title" data-aos="fade">
         О Webioly
       </h1>
       <div class="about__tabs">
@@ -77,18 +78,18 @@
         </a>
       </div>
       <p class="about__text">Webioly — это онлайн-университет. У нас прикладные курсы и программы от главных экспертов рынка, актуальные подходы к обучению, работа над реальными проектами, стажировки и трудоустройство в крупнейшие компании страны.</p>
-      <div class="social">
+      <div class="social" data-aos="fade-down">
         <h2 class="social__title">Свяжитесь с нами</h2>
         <div class="social__items">
-          <a href="#" class="social__link"><img src="./img/telegramm.png" alt="" class="social__img"></a>
-          <a href="#" class="social__link"><img src="./img/github.png" alt="" class="social__img"></a>
-          <a href="#" class="social__link"><img src="./img/youtube.png" alt="" class="social__img"></a>
-          <a href="#" class="social__link"><img src="./img/instagram.png" alt="" class="social__img"></a>
+          <a data-aos="zoom-in" href="#" class="social__link"><img src="./img/telegramm.png" alt="" class="social__img"></a>
+          <a data-aos="zoom-in" href="#" class="social__link"><img src="./img/github.png" alt="" class="social__img"></a>
+          <a data-aos="zoom-in" href="#" class="social__link"><img src="./img/youtube.png" alt="" class="social__img"></a>
+          <a data-aos="zoom-in" href="#" class="social__link"><img src="./img/instagram.png" alt="" class="social__img"></a>
         </div>
       </div>
     </section>
     <section class="cta">
-      <div class="cta__body wrapper">
+      <div class="cta__body wrapper" data-aos="fade-up">
         <div class="cta__left">
           <h2 class="cta__title">Хочешь получать крутые статьи по программированию?</h2>
           <p class="cta__text">Подпишись на рассылку Webioly</p>
@@ -112,11 +113,11 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper wrapper">
-      <div class="footer__left">
+      <div class="footer__left" data-aos="fade-right">
         <h3 class="footer__title">Свяжитесь с нами</h3>
         <p class="footer__text">Вы можете написать нам по любому интересующему вас вопросу.</p>
       </div>
-      <div class="footer__right">
+      <div class="footer__right" data-aos="fade-left">
         <form action="#" class="footer__form">
           <input type="text" class="footer__name input" placeholder="Имя">
           <div class="footer__block">
@@ -217,6 +218,7 @@
       </div>
     </div>
   </div>
-  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
