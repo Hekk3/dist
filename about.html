@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Some Title</title>
+</head>
+<body>
+  <header class="hero__header header">
+    <div class="header__wrapper wrapper">
+      <a href="#" class="header__logo logo">
+        <img src="img/logo.svg" alt="Logotip" class="logo__img">
+        <span class="logo__text">Webioly</span>
+      </a>
+      <label class="search">
+        <input type="search" class="search__input" placeholder="search">
+      </label>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item nav__tooltip">
+            <a href="#" class="nav__link">О нас</a>
+            <button class="tooltip">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link--login">Войти</a>
+          </li>
+        </ul>
+      </nav>
+      </div>
+  </header>
+  <main class="main">
+    <section class="about wrapper">
+      <h1 class="about__title">
+        О Webioly
+      </h1>
+      <div class="about__tabs">
+        <a href="#" class="tabs__button">
+          <p class="tabs__button-text">
+            HTML и CSS
+          </p>
+        </a>
+        <a href="#" class="tabs__button">
+          <p class="tabs__button-text">
+            Bootstrap
+          </p>
+        </a>
+        <a href="#" class="tabs__button">
+          <p class="tabs__button-text">
+            JavaScript
+          </p>
+        </a>
+        <a href="#" class="tabs__button">
+          <p class="tabs__button-text">
+            PHP
+          </p>
+        </a>
+        <a href="#" class="tabs__button">
+          <p class="tabs__button-text">
+            WordPress
+          </p>
+        </a>
+        <a href="#" class="tabs__button">
+          <p class="tabs__button-text">
+            React
+          </p>
+        </a>
+        <a href="#" class="tabs__button">
+          <p class="tabs__button-text">
+            Figma
+          </p>
+        </a>
+      </div>
+      <p class="about__text">Webioly — это онлайн-университет. У нас прикладные курсы и программы от главных экспертов рынка, актуальные подходы к обучению, работа над реальными проектами, стажировки и трудоустройство в крупнейшие компании страны.</p>
+      <div class="social">
+        <h2 class="social__title">Свяжитесь с нами</h2>
+        <div class="social__items">
+          <a href="#" class="social__link"><img src="./img/telegramm.png" alt="" class="social__img"></a>
+          <a href="#" class="social__link"><img src="./img/github.png" alt="" class="social__img"></a>
+          <a href="#" class="social__link"><img src="./img/youtube.png" alt="" class="social__img"></a>
+          <a href="#" class="social__link"><img src="./img/instagram.png" alt="" class="social__img"></a>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="cta__body wrapper">
+        <div class="cta__left">
+          <h2 class="cta__title">Хочешь получать крутые статьи по программированию?</h2>
+          <p class="cta__text">Подпишись на рассылку Webioly</p>
+        </div>
+        <div class="cta__right">
+          <form  class="cta__form" action="">
+            <input type="emali" class="cta__email" placeholder="E-mail">
+            <div class="cta__send">
+              <div class="checkbox">
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="cta__checkbox-input">
+                  <span class="cta__checkbox-text">Я согласен с условиями обработки персональных данных</span>
+                </label>
+              </div>
+              <button class="cta__button">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper wrapper">
+      <div class="footer__left">
+        <h3 class="footer__title">Свяжитесь с нами</h3>
+        <p class="footer__text">Вы можете написать нам по любому интересующему вас вопросу.</p>
+      </div>
+      <div class="footer__right">
+        <form action="#" class="footer__form">
+          <input type="text" class="footer__name input" placeholder="Имя">
+          <div class="footer__block">
+            <input type="email" class="footer__email input" placeholder="E-mail">
+            <input type="tel" class="footer__phone input" placeholder="Телефон">
+          </div>
+          <textarea name="" id="" class="footer__message input" placeholder="Сообщение"></textarea>
+          <div class="footer__send">
+            <div class="checkbox">
+              <label class="custom-checkbox">
+                <input type="checkbox" class="checkbox__input">
+                <span>Я согласен с условиями обработки персональных данных</span>
+              </label>
+            </div>
+            <button class="footer__button">Отправить сообщение</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <p class="footer__copy">© Webioly, 2021</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
