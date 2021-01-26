@@ -1775,6 +1775,259 @@ h6 {
   transform: scale(1.1);
 }
 
+.modals {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.modals__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.modals.active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 101;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-window {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 40px;
+  padding: 25px 25px 40px;
+  box-shadow: 0 1px 38px rgba(0, 0, 0, 0.13);
+  background: var(--color-white);
+  opacity: 0;
+  transform: translate(calc(-50% + -100vw), -50%);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+@media screen and (max-width: 720px) {
+  .modal-window {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .modal-window {
+    padding: 25px;
+  }
+}
+
+.modal-window.active {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.modal-window__logo {
+  margin-bottom: 67px;
+}
+
+@media screen and (max-width: 575px) {
+  .modal-window__logo {
+    margin-bottom: 35px;
+  }
+}
+
+.modal-window__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 80px;
+}
+
+@media screen and (max-width: 720px) {
+  .modal-window__content {
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .modal-window__content {
+    padding: 0;
+  }
+}
+
+.modal-window__title {
+  margin-bottom: 45px;
+  font-family: var(--font-roboto);
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--color-black);
+}
+
+@media screen and (max-width: 575px) {
+  .modal-window__title {
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+.modal-window__form {
+  display: flex;
+  flex-direction: column;
+  width: 388px;
+}
+
+@media screen and (max-width: 720px) {
+  .modal-window__form {
+    width: 100%;
+  }
+}
+
+.modal-window__input {
+  margin-bottom: 32px;
+  outline: none;
+  border-bottom: 2px solid var(--color-black);
+  padding: 10px 0;
+  width: 100%;
+  font-family: var(--font-roboto);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+@media screen and (max-width: 575px) {
+  .modal-window__input {
+    margin-bottom: 20px;
+  }
+}
+
+.modal-window__password {
+  margin-bottom: 42px;
+}
+
+@media screen and (max-width: 575px) {
+  .modal-window__password {
+    margin-bottom: 30px;
+  }
+}
+
+.modal-window__text {
+  margin-bottom: 47px;
+  font-family: var(--font-roboto);
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color-black);
+}
+
+@media screen and (max-width: 575px) {
+  .modal-window__text {
+    margin-bottom: 35px;
+  }
+}
+
+.modal-window__button {
+  outline: none;
+  margin-bottom: 16px;
+  border-radius: 20px;
+  padding: 12px 67px;
+  font-family: var(--font-roboto);
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--color-white);
+  background: var(--color-blue);
+  transition: color 0.3s, background 0.3s;
+}
+
+@media screen and (max-width: 575px) {
+  .modal-window__button {
+    padding: 12px;
+  }
+}
+
+.modal-window__button:hover {
+  color: var(--color-white);
+  background: var(--color-black);
+}
+
+.modal-window__input::-moz-placeholder {
+  color: var(--color-black);
+}
+
+.modal-window__input::-webkit-input-placeholder {
+  color: var(--color-black);
+}
+
+.modal-window__input:-ms-input-placeholder {
+  color: var(--color-black);
+}
+
+.modal-window__input::-ms-input-placeholder {
+  color: var(--color-black);
+}
+
+.modal-window__input::placeholder {
+  color: var(--color-black);
+}
+
+.change-password {
+  margin-bottom: 50px;
+}
+
+.change-registration a {
+  color: var(--color-blue);
+}
+
+.change-registration a:hover {
+  text-decoration: underline;
+}
+
+.change-password,
+.change-registration {
+  font-family: var(--font-roboto);
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: var(--color-black);
+}
+
+.modal-window-5 {
+  z-index: 100;
+}
+
+.modal-window-3 .modal-window__logo {
+  margin-bottom: 40px;
+}
+
+.modal-window-4 .modal-window__content {
+  display: block;
+}
+
+.modal-window-4 .modal-window__form {
+  display: block;
+}
+
+.modal-window-4 .modal-window__button {
+  margin: 0 15px 0 0;
+  padding: 12px 35px;
+}
+
+.modal-window-4 .modal-window__block {
+  display: flex;
+  align-items: center;
+}
+
+.modal-window-4 .modal-window__count {
+  font-family: var(--font-roboto);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--color-black);
+}
+
 ::-webkit-scrollbar {
   background: #555;
 }
