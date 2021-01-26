@@ -31,36 +31,31 @@ var modal3 = document.querySelector('.modal-window-3');
 var modal4 = document.querySelector('.modal-window-4');
 var modal5 = document.querySelector('.modal-window-5');
 
+function modalCall(modal) {
+  for (var index = 0; index < allModal.length; index++) {
+    allModal[index].classList.remove('active');
+  }
+
+  modal.classList.add('active');
+  modals.classList.add('active');
+  insideModals.style.width = modal.clientWidth + "px";
+  insideModals.style.height = modal.clientHeight + "px";
+  document.querySelector('body').classList.add('body-modal');
+}
+
 for (var i = 0; i < navLogin.length; i++) {
   navLogin[i].addEventListener('click', function (e) {
     event.preventDefault();
-
-    for (var index = 0; index < allModal.length; index++) {
-      allModal[index].classList.remove('active');
-    }
-
-    modal1.classList.add('active');
-    modals.classList.add('active');
+    modalCall(modal1);
   });
 }
 
 forgotPassword.addEventListener('click', function () {
-  for (var index = 0; index < allModal.length; index++) {
-    allModal[index].classList.remove('active');
-  }
-
-  modal2.classList.add('active');
-  modals.classList.add('active');
+  modalCall(modal2);
 });
 registrationButton.addEventListener('click', function (e) {
   event.preventDefault();
-
-  for (var index = 0; index < allModal.length; index++) {
-    allModal[index].classList.remove('active');
-  }
-
-  modal3.classList.add('active');
-  modals.classList.add('active');
+  modalCall(modal3);
 });
 document.addEventListener('click', function (e) {
   var target = e.target;
@@ -73,6 +68,7 @@ document.addEventListener('click', function (e) {
     }
 
     modals.classList.remove('active');
+    document.querySelector('body').classList.remove('body-modal');
   }
 }); // AOS
 

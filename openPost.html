@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Some Title</title>
@@ -28,7 +29,7 @@
             </button>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link nav__link--login">Войти</a>
+            <a href="#" class="nav__link nav__link--login login">Войти</a>
           </li>
         </ul>
       </nav>
@@ -75,7 +76,7 @@
       <div class="content__ad"></div>
     </section>
     <section class="cta">
-      <div class="cta__body wrapper">
+      <div class="cta__body wrapper" data-aos="fade-up">
         <div class="cta__left">
           <h2 class="cta__title">Хочешь получать крутые статьи по программированию?</h2>
           <p class="cta__text">Подпишись на рассылку Webioly</p>
@@ -99,11 +100,11 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper wrapper">
-      <div class="footer__left">
+      <div class="footer__left" data-aos="fade-right">
         <h3 class="footer__title">Свяжитесь с нами</h3>
         <p class="footer__text">Вы можете написать нам по любому интересующему вас вопросу.</p>
       </div>
-      <div class="footer__right">
+      <div class="footer__right" data-aos="fade-left">
         <form action="#" class="footer__form">
           <input type="text" class="footer__name input" placeholder="Имя">
           <div class="footer__block">
@@ -204,6 +205,7 @@
       </div>
     </div>
   </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
