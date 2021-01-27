@@ -1,6 +1,7 @@
 "use strict";
 
-// Scroll
+// START HEADER SCROLL
+// ===================
 var header = document.querySelector('.header');
 var lastScrollTop = 0;
 document.addEventListener('scroll', function () {
@@ -16,8 +17,10 @@ document.addEventListener('scroll', function () {
 
   lastScrollTop = scrollSize;
   window.pageYOffset > 1 ? header.classList.add('header--scroll') : header.classList.remove('header--scroll');
-}); // End Scroll
-// modal window
+}); // END HEADER SCROLL
+// =================
+// START MODAL WINDOWS
+// ===================
 
 var navLogin = document.querySelectorAll('.login');
 var forgotPassword = document.querySelector('.change-password');
@@ -70,6 +73,32 @@ document.addEventListener('click', function (e) {
     modals.classList.remove('active');
     document.querySelector('body').classList.remove('body-modal');
   }
-}); // AOS
+}); // END MODAL WINDOWS
+// =================
+// START AOS
+// =========
 
-AOS.init();
+AOS.init(); // End AOS
+// =======
+// START HEADER TOOLTIP
+// ====================
+
+var tooltipBtn1 = document.querySelector('.tooltip-btn-1');
+var tooltipContent1 = document.querySelector('.tooltip-content-1');
+
+if (tooltipBtn1 != undefined && tooltipBtn1 != null && window.innerWidth <= 460) {
+  tooltipBtn1.addEventListener('click', function () {
+    tooltipContent1.classList.toggle('active');
+  });
+  document.addEventListener('click', function (e) {
+    var target = e.target;
+    var its_menu = target == tooltipContent1 || tooltipContent1.contains(target);
+    var its_btnMenu = target == tooltipBtn1 || tooltipBtn1.contains(target);
+    var menu_is_active = tooltipContent1.classList.contains('active');
+
+    if (!its_menu && !its_btnMenu && menu_is_active) {
+      tooltipContent1.classList.remove('active');
+    }
+  });
+} // END HEADER TOOLTIP
+// ====================
