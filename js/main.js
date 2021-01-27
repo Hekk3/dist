@@ -25,6 +25,7 @@ document.addEventListener('scroll', function () {
 var navLogin = document.querySelectorAll('.login');
 var forgotPassword = document.querySelector('.change-password');
 var registrationButton = document.querySelector('.change-registration a');
+var navExit = document.querySelector('.nav__link--exit');
 var allModal = document.querySelectorAll('.modal-window');
 var modals = document.querySelector('.modals');
 var insideModals = document.querySelector('.modals__container');
